@@ -14,14 +14,25 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "sjwgzSAD9oVZA1_WD",
+      });
+   })();
+  
+</script>
+<script src="script.js"></script>
 </head>
 
 <body class="body">
   <!-- navbar hearder-->
   <nav>
     <div>
-      <h1>Workly</h1>
+      <h1 id="h1" >Workly</h1>
     </div>
     <ul>
       <li><a href="#Accueil">Accueil</li></a>
@@ -128,14 +139,14 @@
 
   <div class="contact-container">
     <h1>Contact</h1>
-    <form>
+    <form onsubmit="sendMail()">
       <div class="form-group">
         <label for="nom">Name:</label>
         <input type="text" id="nom" placeholder="Enter your name">
       </div>
       <div class="form-group">
-        <label for="prenom">First Name:</label>
-        <input type="text" id="prenom" placeholder="Enter your first name">
+        <label for="prenom">prenom:</label>
+        <input type="text" id="prenom" placeholder="Enter your second name">
       </div>
       <div class="form-group">
         <label for="telephone">Phone:</label>
@@ -146,8 +157,8 @@
         <input type="email" id="email" placeholder="Enter your email">
       </div>
       <div class="form-group">
-        <label for="adresse">comment</label>
-        <input type="text" id="comment" placeholder="Enter your comment">
+        <label for="message">message</label>
+        <input type="text" id="message" placeholder="Enter your comment">
       </div>
       <button type="submit">Submit</button>
     </form>
