@@ -6,166 +6,177 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coworkinng</title>
   <link rel="stylesheet" href="./style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/js/bootstrap.min.js"
-    integrity="sha512-zKeerWHHuP3ar7kX2WKBSENzb+GJytFSBL6HrR2nPSR1kOX1qjm+oHooQtbDpDBSITgyl7QXZApvDfDWvKjkUw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/css/bootstrap-grid.min.css"
-    integrity="sha512-79vX0oXpL1ee3k+V7jJxmmT+xdb7UrE7Fce5RYu3/l1oO/EWaMGEjDDObLXe2JSrDZtoRntVv0Iolv6i4TDWKw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "sjwgzSAD9oVZA1_WD",
-      });
-   })();
-  
-</script>
-<script src="script.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body class="body">
-  <!-- navbar hearder-->
-  <nav>
-    <div>
-      <h1 id="h1" >Workly</h1>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">workly</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"> NO services</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#"> Café gratuit</a></li>
+              <li><a class="dropdown-item" href="#">Accès 24/7</a></li>
+            </ul>
+          </li>
+        </ul>
+       
+      </div>
     </div>
-    <ul>
-      <li><a href="#Accueil">Accueil</li></a>
-      <li><a href="#Contact">Contact</li></a>
-      <li><a href="#Inscription">Inscription</li></a>
-      <li><a href="#Service">Service</li></a>
-
-    </ul>
-    <button>contact</button>
-        
   </nav>
-  <!--services-->
-  
-    <h1 id="h1">Espace de coworkinng</h1>
-    <div class="servicesection">
-      <div class="service">
-        <h2 id="h2"> Travaillez Mieux Ensemble </h2>
-        <p >Wi-Fi rapide, café illimité imprimantes,salles de réunion</p>
-        <button type="button"> Réserver un espase </button>
-      </div>
-<div class="img">
-      <img src="./images/fram.jpeg">
-    </div>
-    </div>
-    
-  <!-- Notre Equipe-->
 
-  <br>
-  <div class="equipe">
-    <span> Notre Equipe </span>
-    <div class="equipe_info">
-      <div>
-        <img src="./images/téléchargement (2).jpeg">
+  <!-- Hero Section -->
+  <div class="container text-center py-5">
+    <h1>Espace de coworkinng</h1>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2>Travaillez Mieux Ensemble</h2>
+        <p>Wi-Fi rapide, café illimité, imprimantes, salles de réunion</p>
+        <button class="btn btn-primary">Réserver un espace</button>
+      </div>
+      <div class="col-md-6">
+        <img src="./images/fram.jpeg" class="img-fluid" alt="Coworking">
+      </div>
+    </div>
+  </div>
+
+  <!-- Equipe Section -->
+  <div class="container py-5">
+    <h2 class="text-center">Notre Équipe</h2>
+    <div class="row text-center">
+      <div class="col-md-3">
+        <img src="./images/téléchargement (2).jpeg" class="img-fluid rounded-circle mb-2">
         <p>tomas walle</p>
-        <h4>Designer</h4>
+        <h5>Designer</h5>
       </div>
-      <div>
-        <img src="./images/images (1).jpeg">
+      <div class="col-md-3">
+        <img src="./images/images (1).jpeg" class="img-fluid rounded-circle mb-2">
         <p>tom bills</p>
-        <h4>Developer</h4>
+        <h5>Developer</h5>
       </div>
-      <div>
-        <img src="./images/images (2).jpeg">
+      <div class="col-md-3">
+        <img src="./images/images (2).jpeg" class="img-fluid rounded-circle mb-2">
         <p>devid json</p>
-        <h4>Manager</h4>
+        <h5>Manager</h5>
       </div>
-      <div>
-        <img src="./images/images (3).jpeg">
+      <div class="col-md-3">
+        <img src="./images/images (3).jpeg" class="img-fluid rounded-circle mb-2">
         <p>oumaima latrache</p>
-        <h4>CEO</h4>
+        <h5>CEO</h5>
       </div>
     </div>
   </div>
 
-  <!-- aboute -->
-  <div class="aboute_section">
-    <div class="aboute-section">
-      <div class="aboute-info">
-        <h1>Espace moderne calme et inspirant au cœur de la ville </h1>
+  <!-- About Section -->
+  <div class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2>Espace moderne calme et inspirant au cœur de la ville</h2>
         <p>
-          Un espace de coworking est un lieu de travail partagé, ouvert à plusieurs personnes ou entreprises, où chacun
-          peut louer un bureau ou une salle selon ses besoins. Il est souvent utilisé par des freelances, des startups
-          ou des télétravailleurs qui souhaitent travailler dans un cadre professionnel, flexible et collaboratif.
+          Un espace de coworking est un lieu de travail partagé, ouvert à plusieurs personnes ou entreprises, où chacun peut louer un bureau ou une salle selon ses besoins. Il est souvent utilisé par des freelances, des startups ou des télétravailleurs qui souhaitent travailler dans un cadre professionnel, flexible et collaboratif.
         </p>
-        <button class="btn-border-reveal"> Voir Les Offres </button>
+        <button class="btn btn-outline-primary">Voir Les Offres</button>
       </div>
-
-      <div>
-        <img src="./images/carousel .jpeg">
-        <img src="./images/téléchargement.jpeg">
+      <div class="col-md-6">
+        <img src="./images/carousel .jpeg" class="img-fluid mb-2">
+        <img src="./images/téléchargement.jpeg" class="img-fluid">
       </div>
     </div>
   </div>
-  </div>
-  <!-- No services -->
-  <div class="section_nosservice">
-    <div class="nos-services">
-      <div class="serviceformation">
-        <h1>Nos services</h1>
-        <p>Bienvenue sur Coworking</p>
-      </div>
-      <div class="servicesimages">
 
-        <div class="sectioninfo">
-          <img src="./images/offre (1).jpg">
-          <p>L’article de ManiaCowork indique que les tarifs typiques vont de 100 MAD la demi-journée à près de
-            2 500 MAD </p>
-        </div>
-        <div class="sectioninfo">
-          <img src="./images/offre (2).jpg">
-          <p> L’article de ManiaCowork indique que les tarifs typiques vont de 100 MAD la demi-journée à près de
-            2 500 MAD</p>
-        </div>
-        <div class="sectioninfo">
-          <img src="./images/offre (3).jpg">
-          <p>L’article de ManiaCowork indique que les tarifs typiques vont de 100 MAD la demi-journée à près de
-            2 500 Mad</p>
-        </div>
+  <!-- Services Section -->
+  <div class="container py-5">
+    <h2 class="text-center">Nos Services</h2>
+    <p class="text-center">Bienvenue sur Coworking</p>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="./images/offre (1).jpg" class="img-fluid mb-2">
+        <p>Tarifs typiques de 100 MAD la demi-journée à près de 2 500 MAD.</p>
       </div>
-
+      <div class="col-md-4">
+        <img src="./images/offre (2).jpg" class="img-fluid mb-2">
+        <p>Tarifs typiques de 100 MAD la demi-journée à près de 2 500 MAD.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="./images/offre (3).jpg" class="img-fluid mb-2">
+        <p>Tarifs typiques de 100 MAD la demi-journée à près de 2 500 MAD.</p>
+      </div>
     </div>
   </div>
-<!--  -->
 
-  <div class="contact-container">
-    <h1>Contact</h1>
-    <form onsubmit="sendMail()">
-      <div class="form-group">
-        <label for="nom">Name:</label>
-        <input type="text" id="nom" placeholder="Enter your name">
+  <!-- Contact Section -->
+  <div class="container py-5">
+    <h2 class="text-center">Contact</h2>
+    <form action="https://api.web3forms.com/submit" method="POST" class="mx-auto" style="max-width: 600px;">
+      <input type="hidden" name="access_key" value="9143073b-80b8-4b5f-a6b7-c21ba7230c40">
+      <div class="mb-3">
+        <label for="name" class="form-label">Nom</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
       </div>
-      <div class="form-group">
-        <label for="prenom">prenom:</label>
-        <input type="text" id="prenom" placeholder="Enter your second name">
+      <div class="mb-3">
+        <label for="prenom" class="form-label">Prénom</label>
+        <input type="text" class="form-control" id="prenom" name="prenom" placeholder="Enter your second name">
       </div>
-      <div class="form-group">
-        <label for="telephone">Phone:</label>
-        <input type="text" id="telephone" placeholder="Enter your phone number">
+      <div class="mb-3">
+        <label for="telephone" class="form-label">Mobil</label>
+        <input type="text" class="form-control" id="telephone" name="telephone" placeholder="Enter your phone number">
       </div>
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="Enter your email">
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
       </div>
-      <div class="form-group">
-        <label for="message">message</label>
-        <input type="text" id="message" placeholder="Enter your comment">
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <input type="text" class="form-control" id="message" name="message" placeholder="Enter your comment">
       </div>
-      <button type="submit">Submit</button>
+      <button type="submit" class="btn btn-success">Submit</button>
     </form>
-        
   </div>
+  <!-- forterr-->
 
+   <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>À propos</h3>
+        <p>Notre espace de coworking vous offre un environnement moderne, collaboratif et flexible.</p>
+      </div>
+      <div class="footer-column">
+        <h3>Liens rapides</h3>
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Nos services</a></li>
+          <li><a href="#">Réservation</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <ul>
+          <li>Email : contact@coworking.ma</li>
+          <li>Tél : +212 6 12 34 56 78</li>
+          <li>Adresse : Casablanca, Maroc</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 Coworking. Tous droits réservés.
+    </div>
+  </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
